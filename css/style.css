@@ -1,0 +1,502 @@
+/*--------------------------------------------------*/
+
+:root {
+    --cor-azul: #00254D;
+    --cor-amarelo: #D4AF0C;
+    --cor-verde: #3B6E51;
+    --cor-laranja: #FC9210;
+}
+
+/*--------------------------------------------------*/
+/* Big desktop: 1920x1080/900 */
+
+html {
+    cursor: url(/assets/icons/cursor/Pointer_gauntlet_on_32x32.webp), auto;
+}
+
+body {
+    background-color: var(--cor-azul);
+    overflow: auto;
+    /* ou overflow-x / overflow-y */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Esconde a barra de rolagem */
+}
+
+.div-imagens_de_fundo {
+    width: 80vw;
+}
+
+.div-imagens_de_fundo-linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagem_de_fundo {
+    width: 30vw;
+    object-fit: contain;
+
+    transition: width 0.5s, z-index 0s;
+    transition-delay: 0.2s;
+}
+
+.imagem_de_fundo:hover {
+    width: 50vw;
+    border: 3px solid var(--cor-laranja);
+    z-index: 1;
+
+    cursor: url(/assets/icons/cursor/Pointer_inspect_on_32x32.webp), auto;
+}
+
+footer {
+    background: linear-gradient(to bottom, var(--cor-azul), #014085);
+    height: 80px;
+    width: 100vw;
+    justify-content: center;
+}
+
+/*-------------------------*/
+
+.div-principal {
+    height: 100vh;
+    position: fixed;
+    justify-content: center;
+}
+
+/*--------------------------------------------------*/
+
+h1,
+h2,
+h3 {
+    font-family: "Cinzel", serif;
+    color: aliceblue;
+    align-items: end;
+    text-align: center;
+}
+
+h1 {
+    color: var(--cor-laranja);
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+/*-------------------------*/
+
+h1 {
+    background-color: var(--cor-verde);
+    width: 300px;
+    height: 40px;
+
+    border-width: 5px 5px 5px 0;
+    border-style: solid;
+    border-color: var(--cor-amarelo);
+    border-radius: 0 10px 10px 0;
+
+    padding-top: 5px;
+}
+
+h2:nth-of-type(2),
+h2:nth-of-type(3) {
+    margin-top: 15px;
+}
+
+/*--------------------------------------------------*/
+
+.div-perfil {
+    display: flex;
+    z-index: 1;
+}
+
+.img-foto_perfil {
+    width: 100px;
+
+    border: 5px solid var(--cor-amarelo);
+    border-radius: 10px 0 10px 10px;
+}
+
+/*-------------------------*/
+
+.img-foto_perfil,
+main,
+h1,
+iframe {
+    box-shadow: 10px 10px 10px #000000;
+}
+
+body,
+footer,
+.div-principal,
+.div-perfil-foto_nome,
+main,
+.div-linhas,
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a:hover h3,
+.div-codigo:hover h3 {
+    color: var(--cor-laranja);
+    font-weight: bold;
+}
+
+.div-perfil-nome_e_escudos {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.div-escudos {
+    width: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 5px 0 0 5px;
+    z-index: -1;
+}
+
+/*--------------------------------------------------*/
+
+main {
+    background-color: var(--cor-verde);
+    width: 500px;
+
+    border: 5px solid var(--cor-amarelo);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 80px 0 60px 0;
+    margin: -65px 0 -40px 0;
+}
+
+.div-linhas {
+    margin-left: 40px;
+}
+
+a,
+.div-codigo {
+    width: 400px;
+    height: 35px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: url(/assets/icons/cursor/Pointer_gauntlet_cast_on_32x32.webp), auto;
+}
+
+.div-codigo {
+    cursor: url(/assets/icons/cursor/Pointer_worldorders_on_32x32.webp), auto;
+}
+
+.div-botoes_setas {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+}
+
+.div-botoes_setas:hover {
+    cursor: url(/assets/icons/cursor/Pointer_hearth_on_32x32.webp), auto;
+}
+
+/*--------------------------------------------------*/
+
+.img-icon-logo-rede_social,
+.img-icon-logo-blog {
+    padding: 3px 0 3px 0;
+}
+
+.img-icon-logo-escudo,
+.img-icon-logo-plataforma,
+.img-icon-logo-wowhead {
+    width: 35px;
+}
+
+.img-icon-logo-rede_social,
+.img-icon-logo-site,
+.img-icon-link,
+.img-icon-arrow_up,
+.img-icon-arrow_down {
+    width: 30px;
+}
+
+.img-icon-logo-blog,
+.img-icon-copy {
+    width: 28px;
+}
+
+/*--------------------------------------------------*/
+
+iframe {
+    width: 280px;
+    height: 80px;
+}
+
+/*--------------------------------------------------*/
+
+/* Desktop:
+1600x900,
+1440x900,
+1536x864,
+1366x768!,
+1280x800,
+1280x720/550 */
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 11.25px;
+        padding-top: 3px;
+    }
+
+    /*-------------------------*/
+
+    h1 {
+        background-color: var(--cor-verde);
+        width: 220px;
+        height: 30px;
+
+        padding-top: 5px;
+
+        border-width: 5px;
+        border-radius: 10px;
+    }
+
+    h2:nth-of-type(2),
+    h2:nth-of-type(3) {
+        margin-top: 11.25px;
+    }
+
+    /*--------------------------------------------------*/
+
+    .div-perfil {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        top: 27%;
+        left: 3%;
+    }
+
+    .img-foto_perfil {
+        width: 75px;
+
+        border-width: 5px 5px 0 5px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    /*-------------------------*/
+
+    .div-perfil-nome_e_escudos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-escudos {
+        width: 90px;
+        margin: 4px 0 0 4px;
+    }
+
+    /*--------------------------------------------------*/
+
+    main {
+        background-color: var(--cor-verde);
+        width: 560px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding: 15px 0 15px 0;
+        margin: 0;
+    }
+
+    .div-linhas {
+        margin-left: 30px;
+    }
+
+    a,
+    .div-codigo {
+        width: 270px;
+        height: 26.25px;
+    }
+
+    .div-botoes_setas {
+        margin: 0 5px 0 3px;
+    }
+
+    /*--------------------------------------------------*/
+
+    .img-icon-logo-rede_social,
+    .img-icon-logo-blog {
+        padding: 2px 0 2px 0;
+    }
+
+    .img-icon-logo-escudo,
+    .img-icon-logo-plataforma,
+    .img-icon-logo-wowhead {
+        width: 26.25px;
+    }
+
+    .img-icon-logo-rede_social,
+    .img-icon-logo-site,
+    .img-icon-link,
+    .img-icon-arrow_up,
+    .img-icon-arrow_down {
+        width: 22.5px;
+    }
+
+    .img-icon-logo-blog,
+    .img-icon-copy {
+        width: 21px;
+    }
+
+    /*--------------------------------------------------*/
+
+    iframe {
+        width: 230px;
+
+        position: absolute;
+        top: 57%;
+        left: 3%;
+    }
+}
+
+/*--------------------------------------------------*/
+
+/* Tablet landscape:
+1280x800 */
+@media (max-width: 800px) and (orientation:landscape) {}
+
+/* Tablet portrait:
+1024x1366
+800x1280
+768x1024
+600x1024
+601x962 */
+@media (max-width: 1366px) and (orientation:portrait) {}
+
+/*--------------------------------------------------*/
+
+/* Mobile:
+414x896
+414x736 !
+375x667 !
+360x780
+360x760
+360x640
+(max-device-width: 360px) and */
+@media (max-device-width: 414px) {
+
+    .div-imagens_de_fundo {
+        margin-top: 81vh;
+    }
+
+    .div-imagens_de_fundo-linha {
+        flex-direction: column;
+    }
+
+    .imagem_de_fundo {
+        width: 80vw;
+    }
+
+    .imagem_de_fundo:hover {
+        width: 90vw;
+        border-width: 2px;
+        z-index: 1;
+    }
+
+    /*--------------------------------------------------*/
+
+    .div-principal {
+        justify-content: start;
+        margin-top: 1vh;
+    }
+
+    /*--------------------------------------------------*/
+
+    main {
+        width: 90vw;
+        height: fit-content;
+
+        border-width: 4px;
+        padding: 80px 0 60px 0;
+    }
+
+    .div-linhas {
+        margin-left: 9%;
+    }
+
+    a,
+    .div-codigo {
+        width: 70vw;
+    }
+
+    /*--------------------------------------------------*/
+
+    h1 {
+        font-size: 30px;
+    }
+
+    /*-------------------------*/
+
+    h1 {
+        width: 225px;
+        height: 33.75px;
+
+        border-width: 4px 4px 4px 0;
+    }
+
+    /*--------------------------------------------------*/
+
+    .img-foto_perfil {
+        width: 75px;
+
+        border-width: 4px;
+    }
+
+    /*--------------------------------------------------*/
+
+    .div-escudos {
+        width: 90px;
+    }
+
+    /*--------------------------------------------------*/
+
+    .img-icon-logo-escudo {
+        width: 26.25px;
+    }
+
+    /*     
+    .div-button-arrows {
+        padding-right: 5px;
+    } */
+}
+
+/*--------------------------------------------------*/
